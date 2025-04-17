@@ -43,7 +43,17 @@ git clone <repository-url>
 cd <repository-directory>
 ```
 
-2. Install the required dependencies:
+2 – Create and activate a fresh Python environment
+```bash
+
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Linux / macOS
+source venv/bin/activate
+```
+
+3. Install the required dependencies:
 
 # Install dependencies
 ```bash
@@ -61,7 +71,7 @@ pip install -r requirements.txt
 #     --index-url https://download.pytorch.org/whl/cu121
 ```
 
-3. Make sure the ONNX model is placed in the correct location:
+4. Make sure the ONNX model is placed in the correct location:
 ```
 ./exported_model/ocr_model.onnx
 ```
