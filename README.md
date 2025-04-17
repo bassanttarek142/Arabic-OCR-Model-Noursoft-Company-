@@ -22,3 +22,23 @@ A Flask‑based API that performs Arabic Optical Character Recognition (OCR) usi
 ```bash
 git clone <REPO_URL>
 cd Arabic-OCR-Model-Noursoft-Company-
+
+2 – Create and activate a fresh Python environment
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Linux / macOS
+source venv/bin/activate
+
+
+3 – Install dependencies (choose one ONNX line first)
+Open requirements.txt and keep one of these two lines:
+onnxruntime-gpu==1.19.2   # NVIDIA GPU (CUDA 11.8)
+onnxruntime==1.19.2       # CPU‑only (default)
+
+
+Then run:
+pip install --upgrade pip
+pip install -r requirements.txt
+# optional CUDA wheel for PyTorch
+# pip install torch==2.2.0+cu121 torchvision==0.17.0+cu121 --index-url https://download.pytorch.org/whl/cu121
