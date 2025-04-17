@@ -80,7 +80,7 @@ Swagger UI: http://127.0.0.1:5500/api/docs
 | **Production standalone**| python run_ocr_api_production.py | Uses hard‑coded SQL/Mongo connection strings; host preset to 10.111.10.23|
 
 
-📑 Endpoints (summary)
+## 📑 Endpoints (summary)
 
 |Path |Method |Purpose|
 |--------|-----------|--------------------|
@@ -88,3 +88,21 @@ Swagger UI: http://127.0.0.1:5500/api/docs
 |**/api/extract_single_text** |POST |OCR a single Base64 image|
 |**/api/extract_multiple_text** |POST | OCR multiple Base64 images|
 |**/get_model_info** |GET |Show model metadata |
+
+
+Full request/response examples are available in Swagger UI.
+
+## 🧪 Local Testing without DB/Mongo
+
+'''bash
+python swagger_test_helper_onnx.py   # creates ./swagger_payloads_onnx/*.json
+'''
+
+## 📦 Requirements
+
+See requirements.txt – CPU build by default; switch to GPU by uncommenting one line.
+
+
+© 2025 Noursoft Company — released under the MIT License.
+
+
