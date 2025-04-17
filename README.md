@@ -258,5 +258,7 @@ See requirements.txt – CPU build by default; switch to GPU by uncommenting one
 
 
 
+### PLEASE DON'T FORGET TO DOWNLOAD THE ONNX FILE FRON THIS DRIVE 
+https://drive.google.com/drive/folders/1fB913SWCLpiGrX8hoY-ywl0G9Hxp04Fp?usp=drive_link
 
 
