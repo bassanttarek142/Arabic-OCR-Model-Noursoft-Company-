@@ -2,13 +2,15 @@
 
 This repository provides a Flask-based API for Arabic Optical Character Recognition (OCR) using ONNX model. The API is designed as a drop-in replacement for the existing Tesseract-based OCR system.
 
-## Features
+## ✨ Key Features
 
-- Arabic text extraction from images using an ONNX model
-- Line segmentation for improved text recognition accuracy using EasyOCR
-- Compatible with existing API endpoints and database structure
-- Swagger documentation for easy API testing and integration
-- Support for both queue-based processing and direct image processing
+|**Feature**|**Description**|
+|--------------|-----------------------------|
+|ONNX model |CNN + Transformer hybrid encoder‑decoder trained on Arabic text, delivered as exported_model/ocr_model.onnx.|
+|Line segmentation| EasyOCR detects bounding boxes; custom grouping crops clean text lines before inference.|
+|CPU / GPU auto‑detection|Uses CUDA when available; otherwise falls back to CPU seamlessly.|
+|Swagger UI|Browse & test every endpoint at /api/docs.|
+|Queue & Direct modes|Pull images from an SQL queue or send Base64 images directly.|
 
 ## Getting Started
 
