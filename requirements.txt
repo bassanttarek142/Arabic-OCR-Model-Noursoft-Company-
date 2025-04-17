@@ -1,0 +1,26 @@
+# Core dependencies
+numpy>=1.19.0
+opencv-python>=4.5.0
+Pillow>=8.0.0
+flask>=2.0.0
+
+# ONNX model requirements
+onnxruntime>=1.8.0  # Use onnxruntime if GPU not available
+onnx>=1.9.0
+
+# Line segmentation
+easyocr>=1.5.0
+matplotlib>=3.4.0
+
+# API and documentation
+flasgger>=0.9.5
+waitress>=2.0.0  # For production deployment
+
+# Database connections
+pyodbc>=4.0.30
+
+# HTTP requests and data handling
+requests>=2.25.0
+
+# Testing and utilities
+argparse>=1.4.0
