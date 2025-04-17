@@ -66,9 +66,6 @@ pip install -r requirements.txt
 ./exported_model/ocr_model.onnx
 ```
 
-
-```
-
 ### Running the API
 
 For development:
