@@ -14,3 +14,11 @@ A Flask‑based API that performs Arabic Optical Character Recognition (OCR) usi
 ---
 
 ## 🗂 Repository Layout
+
+
+## 🚀 Quick Start
+
+### 1 – Clone / download
+```bash
+git clone <REPO_URL>
+cd Arabic-OCR-Model-Noursoft-Company-
