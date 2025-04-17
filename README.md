@@ -5,7 +5,7 @@ A Flask‑based API that performs Arabic Optical Character Recognition (OCR) usi
 
 | Feature | Description |
 |---------|-------------|
-| **ONNX model** | Transformer encoder‑decoder trained for Arabic text, shipped in `exported_model/ocr_model.onnx`. |
+| **ONNX model** | CNN Transformer encoder‑decoder(Hybird approach) trained for Arabic text, shipped in `exported_model/ocr_model.onnx`. |
 | **Line segmentation** | Uses EasyOCR + custom grouping logic to feed cleaner line crops into the model. |
 | **CPU & GPU auto‑detection** | Runs on CUDA when available; otherwise falls back to CPU transparently. |
 | **Swagger UI** | Self‑documenting endpoints at `/api/docs` for quick testing & integration. |
