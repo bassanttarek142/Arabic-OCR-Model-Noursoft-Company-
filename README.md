@@ -1,4 +1,4 @@
-# Arabic OCR API with ONNX Model
+# Arabic-OCR-Model-Noursoft-Company
 
 This repository provides a Flask-based API for Arabic Optical Character Recognition (OCR) using ONNX model. The API is designed as a drop-in replacement for the existing Tesseract-based OCR system.
 
