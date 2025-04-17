@@ -230,13 +230,6 @@ The system connects to:
 1. SQL Server - for queue processing and result storage
 2. MongoDB - for retrieving images via the API endpoint `http://localhost:7012/mongo-management/GetCollectionById`
 
-### Text Processing
-
-The OCR process follows these steps:
-1. Image preprocessing and loading
-2. Line segmentation to detect individual lines of text
-3. OCR processing of each line using the ONNX model
-4. Post-processing and result aggregation
 
 ### Differences from Tesseract Implementation
 
@@ -244,12 +237,13 @@ While maintaining API compatibility, this implementation:
 - Uses an ONNX model instead of Tesseract
 - Provides line-by-line text recognition for improved accuracy
 - Returns both full text and separated lines in API responses
-- Includes Swagger documentation for easier API testing
 
 
-# 📦 Requirements
+### 📦 Requirements
 
 See requirements.txt – CPU build by default; switch to GPU by uncommenting one line.
+
+
 © 2025 Noursoft Company — released under the MIT License.
 
 
