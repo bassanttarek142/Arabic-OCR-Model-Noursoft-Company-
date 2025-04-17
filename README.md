@@ -38,8 +38,22 @@ cd <repository-directory>
 ```
 
 2. Install the required dependencies:
+
+# Install dependencies (choose one ONNX line first)
+```bash
+Edit requirements.txt and keep one of these lines:
+ Install dependencies (choose one ONNX line first)
+
+onnxruntime-gpu==1.19.2   # NVIDIA GPU (CUDA 11.8)
+onnxruntime==1.19.2       # CPU‑only (default)
 ```
+Then run:
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
+# optional CUDA wheel for PyTorch
+# pip install torch==2.2.0+cu121 torchvision==0.17.0+cu121 \
+#     --index-url https://download.pytorch.org/whl/cu121
 ```
 
 3. Make sure the ONNX model is placed in the correct location:
@@ -53,12 +67,12 @@ pip install -r requirements.txt
 ### Running the API
 
 For development:
-```
+```bash
 python ocr_api_onnx.py
 ```
 
 For production:
-```
+```bash
 python run_ocr_api_production.py (lOCALHOST u don't need to connect to the Server)
 ```
 
@@ -231,11 +245,12 @@ While maintaining API compatibility, this implementation:
 - Includes Swagger documentation for easier API testing
 
 
+# 📦 Requirements
+
+See requirements.txt – CPU build by default; switch to GPU by uncommenting one line.
+© 2025 Noursoft Company — released under the MIT License.
 
 
-## Requirements
-
-See `requirements.txt` for the full list of dependencies.
 
 
 
