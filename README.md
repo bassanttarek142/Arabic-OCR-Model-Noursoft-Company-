@@ -48,7 +48,6 @@ cd <repository-directory>
 # Install dependencies
 ```bash
 Edit requirements.txt and keep one of these lines:
- Install dependencies (choose one ONNX line first)
 
 onnxruntime-gpu==1.19.2   # NVIDIA GPU (CUDA 11.8)
 onnxruntime==1.19.2       # CPU‑only (default)
