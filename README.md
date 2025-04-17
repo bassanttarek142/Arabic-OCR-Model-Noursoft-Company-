@@ -42,3 +42,17 @@ pip install --upgrade pip
 pip install -r requirements.txt
 # optional CUDA wheel for PyTorch
 # pip install torch==2.2.0+cu121 torchvision==0.17.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+
+
+4 – Verify providers
+
+python -c "import onnxruntime as ort, torch; print('ORT:', ort.get_available_providers()); print('CUDA?', torch.cuda.is_available())"
+Expected output examples:
+
+
+ORT: ['CUDAExecutionProvider', 'CPUExecutionProvider']
+CUDA? True
+
+or
+ORT: ['CPUExecutionProvider']
+CUDA? False
