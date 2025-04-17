@@ -21,15 +21,18 @@ This repository provides a Flask-based API for Arabic Optical Character Recognit
 - SQL Server database
 - MongoDB for image storage (SERVER)
 
-### Provided Files
+### 🗂 Repository Layout
+```bash
+.
+├── ocr_module.py               # ONNX wrapper (auto GPU/CPU)
+├── segmentor.py                # EasyOCR‑based line segmenter
+├── config.py                   # Static hyper‑parameters
+├── run_ocr_api_production.py   # Main Flask server (prod)
+├── ocr_api_onnx.py             # Dev entry‑point (optional)
+├── swagger_test_helper_onnx.py # Generates local test payloads
+└── exported_model/ocr_model.onnx
 
-The following essential files are included in the repository:
 
-- `ocr_module.py` - Core OCR functionality with ONNX model integration
-- `config.py` - Configuration settings for the OCR system
-- `segmentor.py` - Line segmentation functionality for improved text recognition
-- `exported_model/ocr_model.onnx` - The ONNX model file for Arabic text recognition
-- `swagger_test_helper_onnx.py` - Helper script to generate test payloads
 
 ### Installation
 
