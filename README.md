@@ -74,7 +74,17 @@ Swagger UI: http://127.0.0.1:5500/api/docs
 
 ## Deployment Notes
 
-| Mode | command | Notes
+| Mode | command | Notes|
 |---------|-------------|----------------|
 | **Development** | python ocr_api_onnx.py | Runs on 127.0.0.1 by default |
 | **Production standalone**| python run_ocr_api_production.py | Uses hard‑coded SQL/Mongo connection strings; host preset to 10.111.10.23|
+
+
+📑 Endpoints (summary)
+
+|Path |Method |Purpose|
+|--------|-----------|--------------------|
+|**/extract_text**| POST| Process next 10 images from SQL queue |
+|**/api/extract_single_text** |POST |OCR a single Base64 image|
+|**/api/extract_multiple_text** |POST | OCR multiple Base64 images|
+|**/get_model_info** |GET |Show model metadata |
