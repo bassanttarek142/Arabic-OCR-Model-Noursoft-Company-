@@ -94,10 +94,9 @@ Full request/response examples are available in Swagger UI.
 
 ## 🧪 Local Testing without DB/Mongo
 
-'''bash
+```bash
 python swagger_test_helper_onnx.py   # creates ./swagger_payloads_onnx/*.json
-'''
-
+```
 ## 📦 Requirements
 
 See requirements.txt – CPU build by default; switch to GPU by uncommenting one line.
