@@ -31,20 +31,21 @@ This repository provides a Flask-based API for Arabic Optical Character Recognit
 ├── ocr_api_onnx.py             # Dev entry‑point (optional)
 ├── swagger_test_helper_onnx.py # Generates local test payloads
 └── exported_model/ocr_model.onnx
+```
 
 
 
-### Installation
+### 🚀 Installation
 
 1. Clone this repository:
-```
+```bash
 git clone <repository-url>
 cd <repository-directory>
 ```
 
 2. Install the required dependencies:
 
-# Install dependencies (choose one ONNX line first)
+# Install dependencies
 ```bash
 Edit requirements.txt and keep one of these lines:
  Install dependencies (choose one ONNX line first)
