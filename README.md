@@ -56,3 +56,14 @@ CUDA? True
 or
 ORT: ['CPUExecutionProvider']
 CUDA? False
+
+
+6 – Launch the API
+python run_ocr_api_production.py
+
+
+API root: http://127.0.0.1:5500/
+
+Swagger UI: http://127.0.0.1:5500/api/docs
+
+
